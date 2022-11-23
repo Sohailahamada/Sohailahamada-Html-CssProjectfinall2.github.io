@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.cdnfonts.com/css/lucida-calligraphy-new" rel="stylesheet">
+                
+	<title>Rsvp</title>
+	<style type="text/css">
+		*{
+	margin: 0;
+	padding: 0;
+    }
+       body{
+	font-family: 'Lucida Calligraphy New', sans-serif;
+	font-size: 100%;
+	background-color:#ffd9d6 ;
+    }
+    form{
+			text-align: left;
+			font-size:20px ;
+			
+		}
+	input{
+		width: 100%;
+		height: 30px;
+	}
+	select{
+		width: 20%;
+		height: 30px;
+	}
+	div::after {
+            content: " *";
+            color: red;
+            font-weight: bold;
+        }
+	.button {
+        border: none;
+        color: white;
+        padding: 24px 52px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        background-color:#d6827c ;
+        width: 30%;
+        height: 70px;
+
+      }
+     .button:hover {
+        background-color: #ffd9d6;
+       color: white;
+      }
+	</style>
+</head>
+<body>
+	<div style="padding: 200px 500px 200px 500px; ">
+		<h2 style="font-size: 40px; text-align: center; color: #d6827c;">RSVP</h2> <br>
+		<p style="text-align:center;white-space:pre-wrap; font-size:20px">We look forward to seeing you! If you will be bringing a guest or have specific dietary restrictions, please make sure it’s noted below.</p><br><br>
+		<h4 style="text-align:center;white-space:pre-wrap; color: #d6827c;">Kindly RSVP by December 15, 2022</h4><hr>
+		<br><br>
+		<form  action="thanking.html">
+			<div><label style="display: inline;">	First Name  :</label></div>
+            <input type="text" name="name1" required >
+
+            <div><label> Second name :</label></div>
+            <input type="text" name="name2" required><br><br>
+
+            <div><label> Email       :</label></div>
+            <input type="email" name="email" required><br><br>
+
+            <div><label> Password    :</label></div>
+            <input type="password" name="pass" required ><br><br>
+
+            <div><label> Repeat Password :</label></div>
+            <input type="password" name="Rpass" required ><br><br><br>
+
+            <div><label> Will you be attending? :</label></div>
+            <select id="attend" name="attendance">
+            <option value="Y">Yes</option>
+            <option value="N">NO</option>
+  
+            </select><br><br>
+
+            <div><label> Will you be bringing a guest? :</label></div>
+            <input type="radio" name="radio1" value="YES" required style="width: 20px; font-size:10px;">YES  &nbsp&nbsp&nbsp
+            <input type="radio" name="radio1" value="NO" required style="width: 20px; font-size:10px;">NO<br>
+            <br>
+            <label>Name of Guest </label><br><br>
+            <label >First Name  :</label>
+            <input type="text" name="name1guest"  >
+
+            <label> Second name :</label>
+            <input type="text" name="name2guest" ><br><br><br>
+
+
+
+            <div><label> Any food restrictions?  </label></div>
+            <input type="text" name="foodrestrict"style="width:100%; height:40px; " required ><br><br>
+
+            <label> Questions or comments?  </label>
+            <textarea cols="50" rows="10" name="textarea"  ></textarea>
+            <br><br><br>
+            <input type="submit" name="submitbutton" class="button"  > <br><br>
+
+            <hr>
+
+            <p style="text-align:center">Already have an account? <a href="login.html">Sign in</a></p>
+
+
+
+
+			
+
+
+
+
+
+
+
+		</form>
+
+
+	</div>
+
+</body>
+</html>
